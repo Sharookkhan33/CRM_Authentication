@@ -22,7 +22,7 @@ const Register = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/auth/register", userData);
+      const res = await axios.post("https://crm-authentication.onrender.com/auth/register", userData);
       if (res.status === 201) {
         navigate("/login"); // Redirect to login after successful registration
       }

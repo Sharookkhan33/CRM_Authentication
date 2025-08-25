@@ -19,7 +19,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", credentials);
+      const res = await axios.post("https://crm-authentication.onrender.com/auth/login", credentials);
       const token = res.data.token;
 
       if (token) {
